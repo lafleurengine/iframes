@@ -1,5 +1,8 @@
-  <style>
-  @import url('https://fonts.googleapis.com/css?family=Exo:400,700');
+<!DOCTYPE html>
+<html>
+<head>
+<style>  
+@import url('https://fonts.googleapis.com/css?family=Exo:400,700');
 
 *{
     margin: 0px;
@@ -10,12 +13,10 @@ body{
     font-family: 'Exo', sans-serif;
 }
 
-
 .context {
     width: 100%;
     position: absolute;
     top:50vh;
-    
 }
 
 .context h1{
@@ -23,7 +24,6 @@ body{
     color: #fff;
     font-size: 50px;
 }
-
 
 .area{
     background: #8DE1E6;  
@@ -129,17 +129,15 @@ body{
     animation-duration: 11s;
 }
 
-
-
 @keyframes animate {
 
-    0%{
+    0% {
         transform: translateY(0) rotate(0deg);
         opacity: 1;
         border-radius: 0;
     }
 
-    100%{
+    100% {
         transform: translateY(-1000px) rotate(720deg);
         opacity: 0;
         border-radius: 50%;
@@ -147,11 +145,13 @@ body{
 
 }
 </style>
+</head>
+	
+<body>
   
-  <div class="context">
-        <h1>xat HTML5</h1>
-    </div>
-
+<div class="context">
+      <h1>xat HTML5</h1>
+</div>
 
 <div class="area" >
             <ul class="circles">
@@ -166,4 +166,6 @@ body{
                     <li></li>
                     <li></li>
             </ul>
-    </div >
+    </div>
+  </body>
+</html>
