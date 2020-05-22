@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: blue;
+}
+</style>
+</head>
+	
+<body>
+
+<br><br><br><br><br>
+<p> Welcome to xat!</p>
+<p> This is an iframe background.</p>
+<p>Your random number:</p>
+
+<script>
+$.getJSON('https://httpbin.org/ip', function(data) {
+                console.log('test zz', data['origin']);
+});
+</script>
+
+</body>
+</html>
