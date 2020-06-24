@@ -120,16 +120,21 @@ body {
     100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
 }
   
-#boat{
-    bottom:5%;
-    position:absolute;
-    -webkit-animation:linear infinite;
-    -webkit-animation-name: run;
-    -webkit-animation-duration: 10s;
-}     
-@-webkit-keyframes run {
-    0% { left: 0;}
-    100%{ left : 100%;}
+#boat {
+  position: relative;
+  left: 0;
+  top: 0;
+  background: #c70039;
+  animation: 10s ease-in-out infinite alternate boatMove;
+}
+
+@keyframes boatMove {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(100vw - 100%));
+  }
 }
 </style>
 </head>
@@ -150,8 +155,6 @@ body {
     </div>
 </div>
 
-<div id="boat">
-    <img src="https://i.imgur.com/GKeFvOW.png" width="100px">
-</div>
+<div id="viewportPendulum"><img src="https://i.imgur.com/GKeFvOW.png" width="100px"></div>
 </body>
 </html>
