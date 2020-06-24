@@ -6,127 +6,167 @@
 
 <style>
 body {
-  background-image: url("lafleur_sea.jpg");
+  background-image: linear-gradient(141deg, #7ccaee 0%, #51c8d5 51%, #48bfec 75%);
 }
   
-.sun { 
-position: absolute;
-top:0;
-left:0;
-right:0;
-bottom:0;
-margin: auto;  
-width:70px;
-height:70px;
-border-radius:50%;	
-background:white;
-opacity:0.9;			
-box-shadow: 0px 0px 40px 15px white;  
+.sun {
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    right: 0;
+    bottom: 0;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: white;
+    opacity: 0.9;
+    box-shadow: 0px 0px 40px 15px white;
 }
 
 .ray_box {
-position: absolute;
-margin: auto;
-top:0px;
-left:0;
-right:0;
-bottom:0;	
-width:70px;  
--webkit-animation: ray_anim 120s linear infinite;
-animation: ray_anim 120s linear infinite;
+    position: absolute;
+    margin: auto;
+    top:0px;
+    left:0;
+    right:0;
+    bottom:0;	
+    width:70px;  
+    -webkit-animation: ray_anim 120s linear infinite;
+    animation: ray_anim 120s linear infinite;
 }
 .ray {  
-  background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
-  background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%); 
-  margin-left:10px;
-  border-radius:80% 80% 0 0;
-  position:absolute;
-  opacity:0.1;
+    background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%);
+    background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 50%, rgba(255,255,255,0) 100%); 
+    margin-left:10px;
+    border-radius:80% 80% 0 0;
+    position:absolute;
+    opacity:0.1;
 }
 
 .ray1 {    
-  height:170px;
-  width:30px;
- -webkit-transform: rotate(180deg);
-  top:-175px;
-  left: 15px;
+    height:170px;
+    width:30px;
+    -webkit-transform: rotate(180deg);
+    top:-175px;
+    left: 15px;
 }
 .ray2 {
-  height:100px;
-  width:8px;
- -webkit-transform: rotate(220deg);
-  top:-90px;
-  left: 75px;
+    height:100px;
+    width:8px;
+    -webkit-transform: rotate(220deg);
+    top:-90px;
+    left: 75px;
 }
 .ray3 {
-  height:170px;
-  width:50px;
- -webkit-transform: rotate(250deg);
-  top:-80px;
-  left: 100px;
+    height:170px;
+    width:50px;
+    -webkit-transform: rotate(250deg);
+    top:-80px;
+    left: 100px;
 }
 .ray4 {
-  height:120px;
-  width:14px;
- -webkit-transform: rotate(305deg);
-  top:30px;
-  left: 100px;
+    height:120px;
+    width:14px;
+    -webkit-transform: rotate(305deg);
+    top:30px;
+    left: 100px;
 }
 .ray5 {
-  height:140px;
-  width:30px;
- -webkit-transform: rotate(-15deg);
-  top:60px;
-  left: 40px;
+    height:140px;
+    width:30px;
+    -webkit-transform: rotate(-15deg);
+    top:60px;
+    left: 40px;
 }
 .ray6 {
-  height:90px;
-  width:50px;
- -webkit-transform: rotate(30deg);
-  top:60px;
-  left: -40px;
+    height:90px;
+    width:50px;
+    -webkit-transform: rotate(30deg);
+    top:60px;
+    left: -40px;
 }
 .ray7 {
-  height:180px;
-  width:10px;
- -webkit-transform: rotate(70deg);
-  top:-35px;
-  left: -40px;
+    height:180px;
+    width:10px;
+    -webkit-transform: rotate(70deg);
+    top:-35px;
+    left: -40px;
 }
 .ray8 {
-  height:120px;
-  width:30px;
- -webkit-transform: rotate(100deg);
-  top:-45px;
-  left:-90px;
+    height:120px;
+    width:30px;
+    -webkit-transform: rotate(100deg);
+    top:-45px;
+    left:-90px;
 }
 .ray9 {
-  height:80px;
-  width:10px;
- -webkit-transform: rotate(120deg);
-  top:-65px;
-  left:-60px;
+    height:80px;
+    width:10px;
+    -webkit-transform: rotate(120deg);
+    top:-65px;
+    left:-60px;
 }
 .ray10 {
-  height:190px;
-  width:23px;
- -webkit-transform: rotate(150deg);
-  top:-185px;
-  left: -60px;
+    height:190px;
+    width:23px;
+    -webkit-transform: rotate(150deg);
+    top:-185px;
+    left: -60px;
 }
-
 
 @-webkit-keyframes ray_anim { 
-  0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}    
-  100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+    0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}    
+    100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
+}
+    
+/*wave*/
+.ocean { 
+  height: 5%;
+  width:100%;
+  position:absolute;
+  bottom:0;
+  left:0;
+  background: #015871;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x; 
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier( 0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%, 100% {
+    transform: translate3d(0,-25px,0);
+  }
+  50% {
+    transform: translate3d(0,5px,0);
+  }
 }
 </style>
-
 </head>
 
 <body>
-  
-  <div class="sun">
+<div class="sun">
     <div class="ray_box">
         <div class="ray ray1"></div>
         <div class="ray ray2"></div>
@@ -140,6 +180,11 @@ animation: ray_anim 120s linear infinite;
         <div class="ray ray10"></div>
     </div>
 </div>
-  
+
+<div class="ocean">
+  <div class="wave"></div>
+  <div class="wave"></div>
+</div>
+
 </body>
 </html>
