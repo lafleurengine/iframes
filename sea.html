@@ -119,36 +119,17 @@ body {
     0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}    
     100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
 }
-    
-/*wave*/
-.wrapper {
-  width: 500px;
-  height: 500px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 5px;
-  background-image: linear-gradient(to top, #accbee 0%, #e7f0fd 100%);
-  overflow: hidden;
-}
-
-.wave {
-  width: 1000px;
-  height: 1025px;
-  position: absolute;
-  top: -25%;
-  left: 50%;
-  margin-left: -500px;
-  margin-top: -500px;
-  border-radius: 35%;
-  background: rgba(255, 255, 255, .75);
-  animation: wave 15s infinite linear;
-}
-
-@keyframes wave {
-  from { transform: rotate(0deg);}
-  from { transform: rotate(360deg);}
+  
+#boat{
+    bottom:5%;
+    position:absolute;
+    -webkit-animation:linear infinite;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 10s;
+}     
+@-webkit-keyframes run {
+    0% { left: 0;}
+    100%{ left : 100%;}
 }
 </style>
 </head>
@@ -169,9 +150,8 @@ body {
     </div>
 </div>
 
-<div class="wrapper">
-  <div class="wave"></div>
+<div id="boat">
+    <img src="https://i.imgur.com/GKeFvOW.png" width="100px">
 </div>
-
 </body>
 </html>
