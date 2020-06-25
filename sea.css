@@ -112,12 +112,19 @@ body {
     0% { -webkit-transform: rotate(0deg); transform: rotate(0deg);}    
     100% { -webkit-transform: rotate(360deg); transform: rotate(360deg);}
 }
-  
-#boat {
-  position: relative;
-  left: 0;
-  top: 0;
-  animation: 10s ease-in-out infinite boatMove;
+
+div#boat {
+    position: absolute;
+    bottom: 0;
+    left: 1px;
+    width: 100%;
+    animation: 5s ease-in-out infinite boatMove;
+}
+
+div#boat img {
+    display: table;
+    position: relative;
+    margin: auto;
 }
 
 @keyframes boatMove {
