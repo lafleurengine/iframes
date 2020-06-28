@@ -115,7 +115,7 @@ body {
 
 div#boat {
     position: absolute;
-    bottom: 24.5%;
+    bottom: 17%;
     left: 1px;
     width: 50%;
     animation: 350s ease-in-out infinite boatMove;
