@@ -115,10 +115,10 @@ body {
 
 div#boat {
     position: absolute;
-    bottom: 0;
+    bottom: 30%;
     left: 1px;
-    width: 100%;
-    animation: 5s ease-in-out infinite boatMove;
+    width: 60%;
+    animation: 350s ease-in-out infinite boatMove;
 }
 
 div#boat img {
