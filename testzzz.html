@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-color: #FA8BFF;
+  background-image: linear-gradient(45deg, #FA8BFF 0%, #2BD2FF 52%, #2BFF88 90%);
+}
+
+.but1 {
+    z-index: 1000;
+    position: absolute;
+    background-color: #eee;
+    width: 20%;
+    top: 80%;
+}
+</style>
+</head>
+
+<body>
+<a class="zzzz1" id="change1">change bg</a>
+</body>
+
+</html>
+$('change1').on('click', function(){
+  $('body').css('background-image', 'url(https://i.imgur.com/fKnS7SG.jpg)')
+})
+
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
